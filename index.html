@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Handyman Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1e293b;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    nav {
+      background: #0f172a;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .illustration {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .illustration img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 6px solid #10b981;
+      padding-left: 0.75rem;
+    }
+    .services ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      list-style: none;
+      padding-top: 1rem;
+    }
+    .services li {
+      background: #ffffff;
+      padding: 1rem;
+      border-radius: 8px;
+      border-left: 5px solid #10b981;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .about p {
+      margin-top: 1rem;
+    }
+    .testimonials blockquote {
+      background: #ffffff;
+      border-left: 5px solid #10b981;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      font-style: italic;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .testimonials cite {
+      display: block;
+      margin-top: 0.5rem;
+      font-weight: bold;
+      text-align: right;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    form {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 1.5rem;
+      background-color: #10b981;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #059669;
+    }
+    footer {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Handyman Solutions</h1>
+    <p>Reliable & Professional Home Services</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="illustration">
+    <img src="https://cdn.pixabay.com/photo/2017/05/29/22/31/repair-2356192_960_720.jpg" alt="Handyman Illustration">
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Plumbing</li>
+      <li>Electrical</li>
+      <li>Flooring</li>
+      <li>Roofing</li>
+      <li>Landscape</li>
+      <li>Concrete</li>
+      <li>Fencing (Wood, Iron, Gates)</li>
+      <li>Decks & Porch</li>
+      <li>Tile & Laminate</li>
+      <li>Door Replacements</li>
+      <li>Bathroom Upgrade</li>
+    </ul>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>At Handyman Solutions, we pride ourselves on delivering high-quality and reliable handyman services tailored to meet the unique needs of every customer. With years of experience, our skilled professionals are committed to completing each job with precision and care. Whether it's a minor repair or a major renovation, you can trust us to get the job done right.</p>
+    <div class="illustration">
+      <img src="https://cdn.pixabay.com/photo/2020/11/08/17/47/worker-5723768_960_720.jpg" alt="About Handyman">
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>Customer Testimonials</h2>
+    <blockquote>
+      "Handyman Solutions transformed my kitchen beautifully. Professional, efficient, and budget-friendly!"
+      <cite>- Sarah M.</cite>
+    </blockquote>
+    <blockquote>
+      "Highly recommend! The team fixed our roof quickly and did a fantastic job."
+      <cite>- John D.</cite>
+    </blockquote>
+    <blockquote>
+      "Very satisfied with their bathroom renovation work. Friendly and skilled staff."
+      <cite>- Priya R.</cite>
+    </blockquote>
+  </section>
+
+  <section id="gallery" class="gallery-section">
+    <h2>Project Gallery</h2>
+    <div class="gallery">
+      <img src="https://cdn.pixabay.com/photo/2018/12/08/23/46/handyman-3866374_960_720.jpg" alt="Gallery 1">
+      <img src="https://cdn.pixabay.com/photo/2016/10/04/18/58/renovation-1717163_960_720.jpg" alt="Gallery 2">
+      <img src="https://cdn.pixabay.com/photo/2017/01/18/15/47/tools-1998071_960_720.jpg" alt="Gallery 3">
+      <img src="https://cdn.pixabay.com/photo/2017/09/06/11/17/tool-2726537_960_720.jpg" alt="Gallery 4">
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Get a Free Estimate</h2>
+    <form action="https://formspree.io/f/mwkgnjwk" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Request</button>
+    </form>
+  </section>
+
+  <footer>
+    <p><strong>Call:</strong> (209) 969-3680 | (209) 414-9090</p>
+    <p><strong>Office:</strong> (209) 331-9151</p>
+    <p><strong>Email:</strong> handymansolution.ca@gmail.com</p>
+  </footer>
+</body>
+</html>
